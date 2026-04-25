@@ -1,25 +1,19 @@
 # CIST
 # CIST: Clade-Informed Sequence Transformer for Influenza Antigenicity Prediction
 
-This repository contains the code and data associated with the manuscript:
-
-> **CIST: A Clade-Informed Sequence Transformer Framework for Predicting Influenza Virus Antigenicity**
-> Kang Hu, Yongshan Zhu, Qingchuan Zhang\*, Jian Li\*
-> *Scientific Reports* (under review)
-
----
 
 ## Requirements
 
 ```
-Python 3.8
-PyTorch 1.7.0
-scikit-learn 1.3.2
-xgboost 1.7.6
-transformers 4.12.0
-numpy 1.21.0
-pandas 1.3.0
-scipy 1.7.0
+torch==2.0.0
+numpy==1.24.0
+pandas==2.0.0
+scikit-learn==1.2.0
+scipy==1.10.0
+sympy==1.12
+einops==0.6.0
+matplotlib==3.7.0
+fair-esm==1.0.3
 ```
 
 Install dependencies:
@@ -40,7 +34,7 @@ pip install -r requirements.txt
 
 ## Reproducibility
 
-All models were trained with fixed random seeds (`torch.manual_seed(42)`, `numpy.random.seed(42)`, `random.seed(42)`) under a 10-fold cross-validation protocol with strain-level stratified splitting. Experiments were conducted on an NVIDIA RTX 3080 Ti GPU (12 GB VRAM) running Ubuntu 20.04.
+All models were trained with fixed random seeds (`torch.manual_seed(42)`, `numpy.random.seed(42)`, `random.seed(42)`) under a 10-fold cross-validation protocol with strain-level stratified splitting. 
 
 ---
 
