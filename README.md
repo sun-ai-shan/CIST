@@ -32,11 +32,7 @@ pip install -r requirements.txt
 
 ---
 
-## Reproducibility
 
-All models were trained with fixed random seeds (`torch.manual_seed(42)`, `numpy.random.seed(42)`, `random.seed(42)`) under a 10-fold cross-validation protocol with strain-level stratified splitting. 
-
----
 
 ## Contact
 
